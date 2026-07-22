@@ -1,0 +1,44 @@
+# ==========================================
+# Archivos y carpetas de Build de Astro
+# ==========================================
+dist/
+.astro/
+
+# ==========================================
+# Dependencias de Node (para cada subproyecto)
+# ==========================================
+**/node_modules/
+node_modules/
+
+# ==========================================
+# Logs y temporales
+# ==========================================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# ==========================================
+# Variables de Entorno (Datos sensibles)
+# ==========================================
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# Archivos del Sistema Operativo
+# ==========================================
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# Configuración del Editor / IDE (VS Code, Cursor)
+# ==========================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
