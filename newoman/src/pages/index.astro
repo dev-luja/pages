@@ -1,11 +1,217 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout description="Homepage">
+  <section class="banner__section mb-5">
+    <div class="before-after-container">
+      <img src="/src/assets/index/design/banners/banner_1.jpeg" class="img-fluid banner-bg" draggable="false" alt="" />
+      <div class="woman-comparison">
+        <img class="woman img_old" src="/src/assets/index/design/woman/old.png" alt="Antes" draggable="false" />
+        <div class="woman-new-container">
+          <img class="woman img_new" src="/src/assets/index/design/woman/new.png" alt="Después" draggable="false" />
+        </div>
+        <div class="comparison-slider"></div>
+      </div>
+    </div>
+    <a class="promotions_btn" href="/promociones">VER PROMOCIONES</a>
+  </section>
+
+  <section class="products__section container text-center">
+    <div class="header-text py-3">
+      <p>PROMOCIONES DEL MES</p>
+      <h1>¿Qué quieres <span>mejorar hoy?</span></h1>
+    </div>
+    <div class="products__container px-5">
+      <!-- ===== CAROUSEL DESK ===== -->
+      <div class="carousel__ofertas mobileHidden">
+        <div id="carouselDesk" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-6 col-md-3 p-0">
+                  <a href="">
+                    <img src="/src/assets/index/design/products/elravie.jpeg" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+                <div class="col-6 col-md-3 p-0">
+                  <a href="">
+                    <img src="/src/assets/index/design/products/hyalmass.jpeg" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+                <div class="col-6 col-md-3 p-0">
+                  <a href="">
+                    <img src="/src/assets/index/design/products/jetema.jpeg" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+                <div class="col-6 col-md-3 p-0">
+                  <a href="">
+                    <img src="/src/assets/index/design/products/wellbeingtox.jpeg" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6 col-md-3 p-0">
+                  <a href="">
+                    <img src="/src/assets/index/design/products/hyalmass.jpeg" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+                <div class="col-6 col-md-3 p-0">
+                  <a href="">
+                    <img src="/src/assets/index/design/products/elravie.jpeg" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+                <div class="col-6 col-md-3 p-0">
+                  <a href="">
+                    <img src="/src/assets/index/design/products/wellbeingtox.jpeg" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+                <div class="col-6 col-md-3 p-0">
+                  <a href="">
+                    <img src="/src/assets/index/design/products/jetema.jpeg" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel_buttons">
+            <button class="carousel-control-prev" title="Prev" type="button" data-bs-target="#carouselDesk" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" title="Next" type="button" data-bs-target="#carouselDesk" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== CAROUSEL MOBILE ===== -->
+      <div class="carousel__ofertas deskHidden">
+        <div id="carouselMobile" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-6 p-1">
+                  <a href="">
+                    <img src="/src/assets/index/design/products/elravie.jpeg" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+                <div class="col-6 p-1">
+                  <a href="">
+                    <img src="/src/assets/index/design/products/hyalmass.jpeg" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6 p-1">
+                  <a href="">
+                    <img src="/src/assets/index/design/products/jetema.jpeg" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+                <div class="col-6 p-1">
+                  <a href="">
+                    <img src="/src/assets/index/design/products/wellbeingtox.jpeg" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel_buttons">
+            <button class="carousel-control-prev" title="Prev" type="button" data-bs-target="#carouselMobile" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" title="Next" type="button" data-bs-target="#carouselMobile" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn_todas my-4">
+      <a href="">VER TODAS LAS PROMOCIONES</a>
+    </div>
+  </section>
+
+  <section class="features__section my-5">
+    <div class="features__container container">
+      <div class="feature">
+        <img class="icon" src="/src/assets/index/design/icons/face-woman.svg" alt="" />
+        <p>Rejuvenecimiento <br /> visible y natural</p>
+      </div>
+      <div class="feature">
+        <i class="bi bi-eyedropper icon"></i>
+        <p>Procedimientos <br /> minimamente invasivos</p>
+      </div>
+      <div class="feature">
+        <i class="bi bi-shield-check icon"></i>
+        <p>Productos seguros <br /> y de alta calidad</p>
+      </div>
+      <div class="feature">
+        <i class="bi bi-heart icon"></i>
+        <p>Resultados que <br /> te hacen sentir bien</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="publicity__section container-fluid py-5 px-0">
+    <div class="row g-0 d-flex gap-2">
+      <div class="col-12 col-md">
+        <a href="#" class="d-block">
+          <img src="/src/assets/index/design/banners/banner_2.jpeg" class="img-fluid" alt="" />
+        </a>
+      </div>
+      <div class="col-12 col-md">
+        <a href="#" class="d-block">
+          <img src="/src/assets/index/design/banners/banner_3.jpeg" class="img-fluid" alt="" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="columns__section">
+    <div class="row">
+      <div class="col-12 col-md-4 p-0">
+        <a href="">
+          <img src="/src/assets/index/design/banners/columns/NZYMES.jpg.jpeg" class="img img-fluid" alt="" />
+        </a>
+      </div>
+      <div class="col-12 col-md-4 p-0">
+        <a href="">
+          <img src="/src/assets/index/design/banners/columns/STARFILL.jpg.jpeg" class="img img-fluid" alt="" />
+        </a>
+      </div>
+      <div class="col-12 col-md-4 p-0">
+        <a href="">
+          <img src="/src/assets/index/design/banners/columns/MDITOXIN100.jpg.jpeg" class="img img-fluid" alt="" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="info__section container-fluid pb-0 text-center">
+    <div class="row py-3">
+      <div class="col-12 col-md-4">
+        <div class="text-icon">
+          <i class="fa fa-exchange"></i>
+          <h6>5% de Dinero electrónico en todas tus compras</h6>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="text-icon">
+          <i class="fa fa-truck"></i>
+          <h6>Envío gratuito para pedidos superiores a $4,000</h6>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="text-icon">
+          <i class="fa fa-life-ring"></i>
+          <h6>Atención Personalizada</h6>
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>

@@ -1,0 +1,342 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout description="Homepage">
+  <section>
+    <section class="banner__section mb-5">
+      <a href="/promociones">
+        <div class="before-after-container">
+          <img src="/web/image/82903-5261a66e/banner_1.jpeg" class="img-fluid banner-bg" alt="" />
+          <div class="woman-comparison">
+            <img class="woman img_old" src="/web/image/82911-f30c095e/old.webp" alt="Antes" />
+            <div class="woman-new-container">
+              <img class="woman img_new" src="/web/image/82904-d34e9e2b/new.webp" alt="Después" />
+            </div>
+            <div class="comparison-slider"></div>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <section class="products__section container text-center">
+      <div class="header-text py-3">
+        <p>PROMOCIONES DEL MES</p>
+        <h1>¿Qué quieres <span>mejorar hoy?</span></h1>
+      </div>
+      <div class="products__container px-5">
+        <!-- ===== CAROUSEL DESK ===== -->
+        <div id="carouselDesk" class="carousel slide mobileHidden" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-6 col-md-3 p-0">
+                  <a href="">
+                    <img src="/web/image/82909-21be1506/elravie.webp" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+                <div class="col-6 col-md-3 p-0">
+                  <a href="">
+                    <img src="/web/image/82907-e176542e/hyalmass.webp" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+                <div class="col-6 col-md-3 p-0">
+                  <a href="">
+                    <img src="/web/image/82908-be1cb3fc/jetema.webp" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+                <div class="col-6 col-md-3 p-0">
+                  <a href="">
+                    <img src="/web/image/82910-a6b609ce/wellbeingtox.webp" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6 col-md-3 p-0">
+                  <a href="">
+                    <img src="/web/image/82907-e176542e/hyalmass.webp" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+                <div class="col-6 col-md-3 p-0">
+                  <a href="">
+                    <img src="/web/image/82909-21be1506/elravie.webp" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+                <div class="col-6 col-md-3 p-0">
+                  <a href="">
+                    <img src="/web/image/82910-a6b609ce/wellbeingtox.webp" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+                <div class="col-6 col-md-3 p-0">
+                  <a href="">
+                    <img src="/web/image/82908-be1cb3fc/jetema.webp" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel_buttons">
+            <button class="carousel-control-prev" title="Prev" type="button" data-bs-target="#carouselDesk" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" title="Next" type="button" data-bs-target="#carouselDesk" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+        <!-- ===== CAROUSEL MOBILE ===== -->
+        <div id="carouselMobile" class="carousel slide deskHidden" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-6 p-1">
+                  <a href="">
+                    <img src="/web/image/82909-21be1506/elravie.webp" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+                <div class="col-6 p-1">
+                  <a href="">
+                    <img src="/web/image/82907-e176542e/hyalmass.webp" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6 p-1">
+                  <a href="">
+                    <img src="/web/image/82908-be1cb3fc/jetema.webp" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+                <div class="col-6 p-1">
+                  <a href="">
+                    <img src="/web/image/82910-a6b609ce/wellbeingtox.webp" class="img img-fluid" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel_buttons">
+            <button class="carousel-control-prev" title="Prev" type="button" data-bs-target="#carouselMobile" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" title="Next" type="button" data-bs-target="#carouselMobile" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+        <div class="btn_todas my-4">
+          <a href="">VER TODAS LAS PROMOCIONES</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features__section my-5">
+      <div class="features__container container">
+        <div class="feature">
+          <img class="icon" src="/web/image/82897-7ac55f02/face-woman.svg" alt="" />
+          <p>Rejuvenecimiento <br /> visible y natural</p>
+        </div>
+        <div class="feature">
+          <i class="bi bi-eyedropper icon"></i>
+          <p>Procedimientos <br /> minimamente invasivos</p>
+        </div>
+        <div class="feature">
+          <i class="bi bi-shield-check icon"></i>
+          <p>Productos seguros <br /> y de alta calidad</p>
+        </div>
+        <div class="feature">
+          <i class="bi bi-heart icon"></i>
+          <p>Resultados que <br /> te hacen sentir bien</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="publicity__section container-fluid py-5 px-0">
+      <div class="row g-2">
+        <div class="col-12 col-md-6">
+          <a href="">
+            <img src="/web/image/82912-ec033842/banner_2.jpeg" class="img img-fluid" alt="" />
+          </a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a href="">
+            <img src="/web/image/82913-d1a1140e/banner_3.jpeg" class="img img-fluid" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="columns__section">
+      <div class="row">
+        <div class="col-12 col-md-4 p-0">
+          <a href="">
+            <img src="/web/image/82902-421dd86d/NZYMES.jpg.webp" class="img img-fluid" alt="" />
+          </a>
+        </div>
+        <div class="col-12 col-md-4 p-0">
+          <a href="">
+            <img src="/web/image/82905-bb9aa404/STARFILL.jpg.webp" class="img img-fluid" alt="" />
+          </a>
+        </div>
+        <div class="col-12 col-md-4 p-0">
+          <a href="">
+            <img src="/web/image/82906-d2229623/MDITOXIN100.jpg.webp" class="img img-fluid" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="info__section container-fluid pb-0 text-center">
+      <div class="row py-3">
+        <div class="col-12 col-md-4">
+          <div class="text-icon">
+            <i class="fa fa-exchange"></i>
+            <h6>5% de Dinero electrónico en todas tus compras</h6>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="text-icon">
+            <i class="fa fa-truck"></i>
+            <h6>Envío gratuito para pedidos superiores a $4,000</h6>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="text-icon">
+            <i class="fa fa-life-ring"></i>
+            <h6>Atención Personalizada</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () =&gt; {
+      try {
+        const container = document.querySelector('.woman-comparison');
+        const newContainer = container ? container.querySelector('.woman-new-container') : null;
+        const slider = container ? container.querySelector('.comparison-slider') : null;
+
+        if (!container || !newContainer || !slider) {
+          throw new Error('Elementos del slider no encontrados');
+        }
+
+        let isDragging = false;
+        let isUserInteracted = false;
+        let animationFrameId = null;
+        let dragRafId = null;
+        let pendingClientX = null;
+
+        const setPosition = (percentage) =&gt; {
+          const clamped = Math.max(0, Math.min(100, percentage));
+          newContainer.style.width = `${clamped}%`;
+          slider.style.left = `${clamped}%`;
+        };
+
+        setPosition(95);
+
+        const updateSliderPosition = (clientX) =&gt; {
+          const rect = container.getBoundingClientRect();
+          const containerWidth = rect.width;
+          let mouseX = clientX - rect.left;
+
+          const minPercentage = 40;
+          const maxPercentage = 100;
+
+          let percentage = (mouseX / containerWidth) * 100;
+
+          if (percentage &lt; minPercentage) percentage = minPercentage;
+          if (percentage &gt; maxPercentage) percentage = maxPercentage;
+
+          setPosition(percentage);
+        };
+
+        const runIntroAnimation = () =&gt; {
+          let progress = 0;
+          const duration = 2000;
+          const startPos = 95;
+          const scanPos = 40;
+          const finalPos = 71;
+          let startTime = null;
+
+          const animateScan = (timestamp) =&gt; {
+            if (isUserInteracted) return;
+
+            if (!startTime) startTime = timestamp;
+            const elapsed = timestamp - startTime;
+            progress = Math.min(elapsed / duration, 1);
+
+            let currentPos;
+            if (progress &lt; 0.5) {
+              const p = progress / 0.5;
+              currentPos = startPos - (startPos - scanPos) * Math.sin(p * (Math.PI / 2));
+            } else {
+              const p = (progress - 0.5) / 0.5;
+              currentPos = scanPos + (finalPos - scanPos) * Math.sin(p * (Math.PI / 2));
+            }
+
+            setPosition(currentPos);
+
+            if (progress &lt; 1) {
+              animationFrameId = requestAnimationFrame(animateScan);
+            } else {
+              animationFrameId = null;
+            }
+          };
+
+          setTimeout(() =&gt; {
+            if (!isUserInteracted) {
+              animationFrameId = requestAnimationFrame(animateScan);
+            }
+          }, 350);
+        };
+
+        runIntroAnimation();
+
+        const startDragging = (e) =&gt; {
+          isUserInteracted = true;
+          if (animationFrameId) {
+            cancelAnimationFrame(animationFrameId);
+            animationFrameId = null;
+          }
+
+          isDragging = true;
+          const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+          updateSliderPosition(clientX);
+        };
+
+        const stopDragging = () =&gt; {
+          isDragging = false;
+          if (dragRafId) {
+            cancelAnimationFrame(dragRafId);
+            dragRafId = null;
+          }
+        };
+
+        const onMove = (e) =&gt; {
+          if (!isDragging) return;
+          pendingClientX = e.touches ? e.touches[0].clientX : e.clientX;
+          if (dragRafId) return;
+          dragRafId = requestAnimationFrame(() =&gt; {
+            updateSliderPosition(pendingClientX);
+            dragRafId = null;
+          });
+        };
+
+        container.addEventListener('mousedown', startDragging);
+        container.addEventListener('touchstart', startDragging, { passive: true });
+
+        window.addEventListener('mousemove', onMove);
+        window.addEventListener('touchmove', onMove, { passive: true });
+
+        window.addEventListener('mouseup', stopDragging);
+        window.addEventListener('touchend', stopDragging);
+      } catch (e) {
+        console.warn('Slider error:', e.message);
+      }
+    });
+  </script>
+</Layout>
