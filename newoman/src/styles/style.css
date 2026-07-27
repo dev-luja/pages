@@ -142,9 +142,9 @@ header {
   background: #3c096c;
 }
 
-nav {
-  /* padding: 1rem; */
-}
+/* nav {
+  padding: 1rem;
+} */
 
 nav ul {
   padding: 0.5rem 2rem;
@@ -525,13 +525,18 @@ nav ul li a {
 
 /* ========== PROMOCIONES ==========  */
 .proms-container a img {
-  border-radius: 1.75rem;
+  border-radius: 22px;
   transition: 0.3s ease;
-  box-shadow: 0 0 8px rgba(97, 56, 163, 0.1);
+  /* box-shadow: 0 0 8px rgba(97, 56, 163, 0.1); */
 }
 
 .proms-container a img:hover {
   transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(97, 56, 163, 0.25);
+}
+
+.proms-container a img:active {
+  transform: translateY(-4px) scale(0.95);
   box-shadow: 0 4px 12px rgba(97, 56, 163, 0.25);
 }
 
