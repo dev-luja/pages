@@ -1,8 +1,10 @@
 /* @import url('https://use.typekit.net/dkf1xqu.css'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* ===== GENERAL ===== */
 :root {
   --main-font: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
 
+  --root-page-color: #483271;
   --main-color: #2b195e;
   --secondary-color: #5c3c9f;
 
@@ -28,6 +30,11 @@
   --i-font: italic;
 
   --header-height: 64px;
+}
+
+[class*='-primary'] {
+  --bs-primary: #483271 !important;
+  --bs-primary-rgb: 72, 50, 113 !important;
 }
 
 html {
@@ -63,97 +70,86 @@ body {
   transition: 0.3 ease;
 }
 
-/* img {
-  max-width: 100%;
-  height: auto;
-} */
-
-/* img,
 a {
-  -webkit-user-drag: none;
-  user-select: none;
-} */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-span,
-a {
-  padding: 0;
-  margin: 0;
-  /* user-select: none; */
   text-decoration: none;
-  transition: 0.3s ease;
-}
-
-ul,
-ol,
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* ========== REVEALS ========== */
-/* [class*='reveal'] {
-  visibility: hidden;
-} */
-
-/* ===== Layout ===== */
-main {
-  flex-grow: 1;
-  padding-top: var(--header-height);
-}
-
-main h1 {
-  font-size: var(--fs-header);
-  font-weight: var(--fw-600);
-}
-
-main h2 {
-  font-size: var(--fs-subheader);
-  font-weight: var(--fw-600);
-}
-
-main h3 {
-  font-size: var(--fs-body);
-  font-weight: var(--fw-600);
-}
-
-main p {
-  color: var(--text-body-color);
-  font-size: var(--fs-body);
-  font-weight: var(--fw-400);
 }
 
 /* ========== NAVBAR ========== */
 header {
-  width: 100%;
-  height: var(--header-height);
-  position: fixed;
-  top: 0;
-  left: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar .bi,
+.navbar .btn-link {
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.nav-item .nav-link {
+  font-weight: 500;
   display: flex;
   align-items: center;
-  z-index: 999;
-  background: #3c096c;
+  justify-content: space-between;
+  font-weight: 500;
+  padding: 5px 20px;
+  min-height: 44px;
 }
 
-/* nav {
-  padding: 1rem;
-} */
+.nav-item span {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s ease;
 
-nav ul {
-  padding: 0.5rem 2rem;
-  display: flex;
-  gap: 2rem;
+  &:hover,
+  &.active {
+    color: #ffffff;
+  }
 }
 
-nav ul li a {
+.tp-menu-sidebar .nav-item span {
+  color: #000;
+}
+
+.navbar sup {
   color: #fff;
+  background-color: #432776;
+  top: -10px;
+  right: -10px;
+  border-radius: 40px;
+  text-align: center;
+  height: 18px;
+  width: 18px;
+  font-size: 9px;
+  line-height: 18px;
+}
+
+header .logo img {
+  object-fit: contain;
+  display: block;
+  width: auto;
+  height: 4rem;
+}
+
+.tp-menu-sidebar .tp-user-info-container {
+  background-color: black;
+}
+
+.tp-menu-sidebar .tp-user-info-container .tp-user-logo {
+  font-size: 1.6rem;
+  height: 2.8rem;
+  width: 2.8rem;
+  line-height: 2.8rem;
+}
+
+.tp-menu-sidebar .btn-close {
+  filter: invert(1);
 }
 
 /* ========== INDEX ========== */
