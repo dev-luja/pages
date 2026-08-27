@@ -19,6 +19,6 @@ Para correr el proyecto se tiene que hacer lo siguiente:
 ```bash
 cd <unidad>
 
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```

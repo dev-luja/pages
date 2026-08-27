@@ -42,3 +42,9 @@ Thumbs.db
 *.njsproj
 *.sln
 *.swp
+
+# ==========================================
+# Locks de otros gestores (el proyecto usa pnpm)
+# ==========================================
+package-lock.json
+yarn.lock
